@@ -116,21 +116,24 @@ textarea{
 /*comienzan las media query */
 @media(max-width:800px){
     main{
+        margin: o auto;
         width: 450px;
-        grid-template-rows: 2;
-        grid-template-columns: 1;
+        grid-template-rows: repeat(2,0.5fr);
+        grid-template-columns:repeat(1, 0.5fr);
     }
     .centrado{
         grid-row: 1;
-        width: 80%;
-        margin: auto;
+        width: 75%;
+        height: 75%;
+        margin: 0 auto;
     }
     .encriptador{
         grid-column: 1;
         grid-row: 2;
-        width: 80%;
-        height: 150px;
-        margin: auto;
+        width: 75%;
+        height: 75%;
+        margin: 0  auto;
+        border: none;
     }
     #imgEncrip{
         display: none;
@@ -139,13 +142,28 @@ textarea{
         display:none
     }
     #copiar{
-       width: 80%;
+       width: 75%;
        margin-top: 10%;
-       align-items: center;
+       margin: 0 auto;
     }
     #encriptadorTexto{
         margin: 0;
-        height: 80%;
+        height: 75%;
+    }
+   
+    h1{
+        display: none;
+    }
+    .titulo{
+        font-size: 22px;
+    }
+    header{
+        width: 450px;
+        background-color: white;
+        margin: 50px auto;
+    }
+    img{
+        margin-left: 15px;
     }
 }
 @media(max-width:330px){
