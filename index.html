@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="fichero.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap" rel="stylesheet">
+    <title>Encriptador Alura</title>
+</head>
+<body>
+    <header>
+        <img src="./imagenes/Logo.png" alt="logo Alura">
+        <h1>"Bienvenido al Encriptador Alura"</h1>
+    </header>
+    <main>
+        <section class="centrado">
+            <h2 class="titulo"> Ingrese el texto aqui :</h2>
+            <textarea  cols="28" rows="18" id="textoDesencriptado"></textarea>
+            <p class="oracion">Solo minusculas y sin acento</p>
+            <button class="boton1" onclick="encriptar()">Encriptar</button>
+            <button class="boton2" onclick="desencriptar()">Desencriptar</button>
+            
+        </section>
+        <section class="encritador" >
+            <img src="./imagenes/Muñeco.png" alt=" imagen hombre buscando diamantes " id="imgEncrip">
+            <h2 id="Tencriptador">Ningun mensaje fue encontrado</h2>
+            <textarea cols="20" rows="8" id="encriptadorTexto"></textarea>
+            <button type="button"id="copiar" onclick="copiar()">COPIAR</button>
+        </section>
+     </main>
+</body>
+</html>

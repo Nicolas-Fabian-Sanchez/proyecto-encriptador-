@@ -1,0 +1,116 @@
+body{
+    font-family: 'Fira Mono', monospace;
+}
+/* css encabezado */
+header{
+    background-color:rgb(137, 144, 243) ;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    color:rgb(45, 4, 116) ;
+    padding: 20px;
+    font-size: 40px;
+}
+img{
+    padding: 20px;
+}
+/* css para el main */
+main{
+    width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px; /* para separa las grillas */
+    grid-auto-rows: minmax(150px,auto);
+}
+.titulo{
+    color: rgb(45, 4, 116); 
+    text-decoration: underline;
+    grid-column: 1/2;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 20px;
+}
+textarea{
+    grid-column: 1/2;
+    width: 600px;
+    margin: 5px auto;
+    border: none;
+    outline: none;/*para que no me aparesca el recuadro cuando tico*/
+    font-size: 20px;
+    font-weight: bold;
+    color: #0A3871;
+}
+.oracion{
+    margin:  0 25px;
+}
+.encritador{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 300px;
+    height: 600px;
+    margin: 5px auto;
+    border: 3px solid rgb(2, 2, 100);
+    border-radius: 15px;
+}
+#imgEncrip{
+    width: 85%;
+    height: auto;
+    margin: 30px 0 0 5px;
+}
+#Tencriptador{
+    font-size: 30px;
+    text-decoration:none;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(45, 4, 116); 
+
+}
+#encriptadorTexto{
+    width: 80%;
+    height: auto;
+    margin: 10px;
+}
+.centrado{
+    align-items: center;
+}
+
+.boton1{
+    border: none;
+    border-radius: 5px;
+    background: #0A3871;
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    display: inline;
+    padding: 20px 30px;
+    margin-left: 20px;
+    width: 45%;
+    
+}
+.boton2{
+    
+    border: 5px solid #0A3871;
+    border-radius: 5px;
+    background: white;
+    color:#0A3871;
+    text-align: center;
+    font-size: 20px;
+    display: inline;
+    padding: 15px 25px;
+    margin: 5px;
+    width: 45%;
+}
+#copiar{
+    display: none;
+    padding: 24px;
+    margin-left: 33%;
+    margin-top: 90%;
+    width: 40%;
+    height: 10%;
+    border-radius: 5px;
+    background: #D8DFE8;
+    font-weight: bold;
+}
+/*comienzan las media query */
