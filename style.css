@@ -44,6 +44,10 @@ textarea{
 .oracion{
     margin:  0 25px;
 }
+.oracion::before{
+    content: "●";
+    color: #0A3871;
+}
 .encriptador{
     grid-column: 2/3;
     grid-row: 1/3;
@@ -169,5 +173,13 @@ textarea{
 @media(max-width:330px){
     main{
         width: 250px;
+    }
+    .boton1{
+        display: block;
+        margin:3px auto;
+    }
+    .boton2{
+        display:block;
+        margin: 3px auto;
     }
 }
